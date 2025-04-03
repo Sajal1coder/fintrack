@@ -15,6 +15,20 @@
       "when": 1743697785383,
       "tag": "0001_violet_warhawk",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1743699116534,
+      "tag": "0002_fluffy_gabe_jones",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1743701499426,
+      "tag": "0003_workable_venus",
+      "breakpoints": true
     }
   ]
 }

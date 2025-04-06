@@ -9,7 +9,7 @@ import Link from "next/link";
 import { HeaderLogo } from "./header-logo";
 import { Navigation } from "./navigation";
 import { WelcomeMsg } from "./welcome-msg";
-
+import { Filters } from "@/components/filters";
 export const Header = () => {
   return (
     <header className="bg-gradient-to-b from-blue-700 to-blue-500 px-4 py-8 lg:px-14 lg:pb-32">
@@ -34,7 +34,7 @@ export const Header = () => {
         </div>
 
         <WelcomeMsg />
-      
+        <Filters />
       </div>
     </header>
   );

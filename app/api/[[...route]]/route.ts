@@ -5,12 +5,15 @@ import accounts from "./accounts";
 import categories from "./categories";
 import summary from "./summary";
 import transactions from "./transactions";
-
+import plaid from "./plaid";
+import subscriptions from "./subscriptions";
 export const runtime = "edge";
 
 const app = new Hono().basePath("/api");
 
 const routes = app
+  .route("/plaid",plaid)
+  .route("/subscriptions",subscriptions)
   .route("/accounts", accounts)
   .route("/categories", categories)
   .route("/summary", summary)

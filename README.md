@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 FinTrack - Personal Finance Tracker
 
-## Getting Started
+**FinTrack** is a modern, full-stack personal finance tracker that helps users seamlessly manage their income, expenses, budgets, and savings goals. It supports real-time bank sync, CSV transaction imports, and automatic expense categorization—making budgeting and money management effortless.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📸 Screenshots
+
+| Bank sync | Dashboard | Login Page |
+|----------|---------------------|-------------|
+| ![Screenshot (61)](https://github.com/user-attachments/assets/280ba8f3-cc82-4fc5-bcde-e15cc85e65f7) |![Screenshot (60)](https://github.com/user-attachments/assets/2d0849bf-dad1-4cf4-9cbc-7b40b99bdb4b)|![Screenshot (59)](https://github.com/user-attachments/assets/8d47c9be-8cb7-4f7c-aee4-ce13637d3969) |
+
+---
+
+## 🚀 Features
+
+- 🔐 **Secure Authentication**  
+  User registration, login, and JWT-based session management with bcrypt encryption.
+
+- 🏦 **Bank Account Sync + CSV Import**  
+  Sync transactions directly from bank APIs or upload CSV files for bulk import.
+
+- 🧠 **Auto-Categorization**  
+  Automatically classify expenses based on description and predefined rules.
+
+- 📊 **Visual Dashboard**  
+  Interactive charts and stats for spending trends, savings, and budgets.
+
+- 💼 **Expense & Income Tracking**  
+  Log and view all financial transactions in one place, with filters and sorting.
+
+- 🎯 **Goals & Budgets**  
+  Set monthly budgets and track progress towards saving goals.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**:  
+- React.js  
+- TailwindCSS  
+- Chart.js / Recharts
+- Typescript
+
+**Backend**:  
+- Node.js  
+- Express.js  
+
+**Database**:
+- PostgreSQL with Prisma
+ORM
+
+**Library**:
+- React Query
+-  Zod
+-  React
+   
+---
+
+## 📂 Folder Structure
+
+```
+fintrack/
+├── app/              # React frontend
+├── components/              # Node.js backend
+├── db/         # Project screenshots (for README)
+├── .env.example         # Sample environment variables
+└── README.md
+└── features
+└──hooks
+└──providers
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository**
 
-## Learn More
+```bash
+git clone https://github.com/Sajal1coder/fintrack.git
+cd fintrack
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Setup**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Environment Variables**
 
-## Deploy on Vercel
+Create a `.env` file in `server/` using `.env.example` as a template. Add:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+DATABASE_URL=postgresql://
+PLAID_CLIENT_TOKEN=
+PLAID_SECRET_TOKEN=
+
+LEMONSQUEEZY_STORE_ID=
+LEMONSQUEEZY_API_KEY=
+LEMONSQUEEZY_WEBHOOK_SECRET=
+LEMONSQUEEZY_PRODUCT_ID=
+```
+
+---
+
+## 🧾 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+Built with ❤️ by [Sajal Kumar Baranwal](https://github.com/Sajal1coder)

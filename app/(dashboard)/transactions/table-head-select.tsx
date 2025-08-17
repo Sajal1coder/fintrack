@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
+export const dynamic = 'force-dynamic'
 type Props = {
   columnIndex: number;
   selectedColumns: Record<string, string | null>;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { format, parse } from "date-fns";
-
+export const dynamic = 'force-dynamic'
 import { 
   Card,
   CardContent,

@@ -1,5 +1,5 @@
 import { useOpenAccount } from "@/features/accounts/hooks/use-open-account";
-
+export const dynamic = 'force-dynamic'
 type Props = {
   account: string;
   accountId: string;

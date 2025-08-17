@@ -6,7 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
+export const dynamic = 'force-dynamic'
 import { TableHeadSelect } from "./table-head-select";
 
 type Props = {

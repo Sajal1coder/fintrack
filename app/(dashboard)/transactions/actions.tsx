@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = 'force-dynamic'
 import { Edit, MoreHorizontal, Trash } from "lucide-react";
 
 import { useOpenTransaction } from "@/features/transactions/hooks/use-open-transaction";

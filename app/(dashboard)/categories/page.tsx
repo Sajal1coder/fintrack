@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = 'force-dynamic'
 import { Loader2, Plus } from "lucide-react";
 
 import { useNewCategory } from "@/features/categories/hooks/use-new-category";

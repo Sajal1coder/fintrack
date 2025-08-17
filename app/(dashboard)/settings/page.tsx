@@ -1,5 +1,5 @@
 import { SettingsCard } from "./settings-card";
-
+export const dynamic = 'force-dynamic'
 const SettingsPage = () => {
   return ( 
     <div className="max-w-screen-2xl mx-auto w-full pb-10 -mt-24">

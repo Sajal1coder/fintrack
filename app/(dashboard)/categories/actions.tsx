@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = 'force-dynamic'
 import { Edit, MoreHorizontal, Trash } from "lucide-react";
 
 import { useOpenCategory } from "@/features/categories/hooks/use-open-category";

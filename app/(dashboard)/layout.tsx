@@ -1,6 +1,7 @@
 import type { PropsWithChildren } from "react";
 
 import { Header } from "@/components/header";
+export const dynamic = 'force-dynamic'
 
 const DashboardLayout = ({ children }: PropsWithChildren) => {
   return (

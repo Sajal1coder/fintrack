@@ -2,7 +2,7 @@ import { Upload } from "lucide-react";
 import { useCSVReader } from "react-papaparse";
 
 import { Button } from "@/components/ui/button";
-
+export const dynamic = 'force-dynamic'
 type Props = {
   onUpload: (results: any) => void;
 };
